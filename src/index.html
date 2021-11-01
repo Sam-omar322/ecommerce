@@ -10,11 +10,47 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="navbar">
+      <nav class="navbar custom-navbar">
+        <div class="container">
         <div class="navbar-header">
           <a href="." class="navbar-brand">
             <img src="./images/logo.png" alt="logo image">
           </a>
+        </div>
+
+        <form class="form-inline">
+          <input type="search" class="form-control" placeholder="أبحث.. ">
+          <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdown-search-class" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">أختر فئة</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="category" value="male">
+                  رجالي
+                </label>
+                </div>
+              </li>
+              <li class="dropdown-item">
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="category" value="female">
+                  نسائي
+                </label>
+                </div>
+              </li>
+              <li class="dropdown-item">
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="category" value="kids">
+                  أطفال
+                </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="btn">أبحث</button>
+        </form>
         </div>
       </nav>
     </div>

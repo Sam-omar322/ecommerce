@@ -1,4 +1,24 @@
-h1 {
-    color: red;
-    text-align: center;
+@font-face {
+	font-family: "JF-Flat-Regular";
+	src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/JF-Flat-regular.svg#JF-Flat-Regular) format('svg'),
+         url(../fonts/JF-Flat-regular.woff) format('woff'),
+         url(../fonts/JF-Flat-regular.ttf) format('truetype');
+	font-weight: bolder;
+	font-style: normal
+}
+
+body {
+	font-family: "JF-Flat-Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	color: black;
+	line-height: 1.429;
+}
+
+.custom-navbar {
+    border-bottom: 3px solid #EEFBEA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
 }
