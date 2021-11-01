@@ -28,6 +28,13 @@ module.exports = {
     rules: [
 
       {
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
+        options: {
+          exposes: ["$", "jQuery"],
+        },
+      },
+      {
         test: /\.(svg|eot|woff|woff2|ttf)$/,
         use: [
           {

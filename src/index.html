@@ -10,47 +10,73 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="navbar custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-        <div class="navbar-header">
-          <a href="." class="navbar-brand">
-            <img src="./images/logo.png" alt="logo image">
-          </a>
-        </div>
-
-        <form class="form-inline">
-          <input type="search" class="form-control" placeholder="أبحث.. ">
-          <div class="dropdown">
-            <a class="dropdown-toggle" type="button" id="dropdown-search-class" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">أختر فئة</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">
-                <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="category" value="male">
-                  رجالي
-                </label>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="category" value="female">
-                  نسائي
-                </label>
-                </div>
-              </li>
-              <li class="dropdown-item">
-                <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="category" value="kids">
-                  أطفال
-                </label>
-                </div>
-              </li>
-            </ul>
+          <div class="navbar-header">
+            <a href="." class="navbar-brand">
+              <img src="./images/logo.png" alt="logo image">
+            </a>
           </div>
-          <button type="submit" class="btn">أبحث</button>
-        </form>
+
+          <form class="form-inline">
+            <input type="search" class="form-control custom-form-control" placeholder="أبحث.. ">
+            <div class="dropdown categories">
+              <a class="nav-link dropdown-toggle custom-form-control custom-btn" type="button" id="dropdown-search-class" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">أختر فئة</a>
+              <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdown-search-class">
+                <li class="dropdown-item">
+                  <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="category" value="male">
+                    رجالي
+                  </label>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="category" value="female">
+                    نسائي
+                  </label>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="category" value="kids">
+                    أطفال
+                  </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="btn search-btn">أبحث</button>
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" type="button" id="dropdown-class" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">أقسام المتجر</a>
+              <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdown-class">
+                <li><a href="#" class="dropdown-item">رجالي</a></li>
+                <li><a href="#" class="dropdown-item">نسائي</a></li>
+                <li><a href="#" class="dropdown-item">أطفال</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="search.html" class="nav-link">البحث المتقدم</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </li>
+            <li>
+              <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon"
+              data-toggle="tooltip" data-placement="bottom" title="عربة الشراء">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
