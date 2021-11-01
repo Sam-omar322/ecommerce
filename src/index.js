@@ -5,6 +5,10 @@ import "jquery/dist/jquery.min";
 import "popper.js/dist/popper.min";
 import "@fortawesome/fontawesome-free/js/all.js";
 
-$(document).ready(function() {
+$(function() {
     $('[data-toggle="tooltip"]').tooltip()
+
+    $(".add-to-cart-btn").click(function() {
+        alert("تم إضافة المنتج الى العربة");
+    })
 });
