@@ -10,5 +10,7 @@ $(function() {
 
     $(".add-to-cart-btn").click(function() {
         alert("تم إضافة المنتج الى العربة");
-    })
+    });
+
+    $("#copyright").text(' جميع حقوق محفوظة ' + new Date().getFullYear());
 });
