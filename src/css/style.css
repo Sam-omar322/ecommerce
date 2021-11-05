@@ -38,6 +38,7 @@ body {
     box-shadow: none;
     border-radius: 2px;
     font-size: 14px;
+    height: 38px;
     transition: all .3s ease;
     padding: 6px 16px 7px;
     color: #868686;
@@ -431,7 +432,7 @@ a.btn-icon:hover {
     margin-bottom: 15px;
 }
 
-.custom-pane .product-details .custom-text-muted {
+.custom-text-muted {
     color: #a9a9a9;
 }
 
@@ -664,10 +665,6 @@ input[type="email"] {
     margin-right: 5px;
 }
 
-.product-quantity select:focus {
-
-}
-
 .product-quantity label {
     padding-top: 7px;
 }
@@ -717,6 +714,88 @@ input[type="email"] {
 .suggestions .custom-thumbnail {
     margin-right: -8px;
     margin-left: -8px;
+}
+
+/*****************************************
+*************
+    CHECKOUT PAGE
+******************************************
+************/
+
+/* table */
+h1.title-section {
+    font-size: 36px;
+}
+
+.custom-table {
+    width: 100%;
+}
+
+.custom-table tbody td:first-child {
+    padding-right: 20px;
+}
+
+.custom-table tfoot tr td {
+    font-size: 150%;
+    border-bottom: none;
+}
+
+.custom-table th, .custom-table td {
+    padding: 15px;
+    font-size: 120%;
+    vertical-align: middle;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.custom-table th {
+    color: #c2c2c2;
+    font-weight: 400;
+}
+
+.custom-table td:not(:first-child),
+.custom-table th:not(:first-child) {
+    text-align: center;
+}
+
+.custom-table .quantity {
+    width: 56px;
+    height: 34px!important;
+    padding: 0 8px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* media */
+.custom-media {
+    margin: 0 15px 15px;
+}
+
+.custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+
+.custom-media h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.custom-btn-danger {
+    color: #ff3956;
+    border-color: #ff3956;
+    background-color: transparent;
+}
+
+.custom-btn-danger:active,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:active:hover,
+.custom-btn-danger:focus,
+.custom-btn-danger:hover {
+    color: #b9001b;
+    border-color: #b9001b;
+    background-color: transparent;
 }
 
 /*****************************************
@@ -858,6 +937,9 @@ input[type="email"] {
     }
     #footer-nav form .input-group {
         width: 100%;
+    }
+    .hide-on-small {
+        display: none;
     }
 }
 
