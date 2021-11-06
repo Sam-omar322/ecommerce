@@ -503,7 +503,7 @@ a.btn-icon:hover {
     margin: auto;
 }
 
-input[type="email"] {
+input[type="email"], input[type="number"] {
     direction: rtl;
     text-align: right;
 }
@@ -796,6 +796,30 @@ h1.title-section {
     color: #b9001b;
     border-color: #b9001b;
     background-color: transparent;
+}
+
+/*****************************************
+*************
+    PAYMENT PAGE
+******************************************
+************/
+
+.custom-input-details {
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0 16px;
+    font-size: 16px;
+    width: 97%;
+}
+
+.custom-input-details:focus {
+    border-color: #b86d07;
+    box-shadow: 0 0 2px 0 #b86d07;
+}
+
+#credit-card-info {
+    margin-right: 3%;
 }
 
 /*****************************************

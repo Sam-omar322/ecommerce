@@ -87,4 +87,58 @@ $(function() {
         }
 
     }
+
+    // cities object
+    var citiesByCountry = {
+        sa: ["الرياض", "جدة", "القصيم", "مكة", "المدينة المنورة"],
+        eg: ["القاهرة", "الأسكندرية"],
+        jo: ["عمان", "الزرقاء"],
+        sy: ["دمشق", "حلب", "حماه"]
+    };
+
+    // when country select is changed
+    $('#form-checkout select[name="country"]').change(function() {
+
+        // get value of country selected
+        var country = $(this).val();
+
+        // access cities by country keys, sa:[values]
+        var cities = citiesByCountry[country];
+
+        // empty city select
+        $('#form-checkout select[name="city"]').empty();
+
+        // append defualt value on city select
+        $('#form-checkout select[name="city"]').append(
+            "<option disabled selected value=''>اختر الدولة</option>"
+        );
+
+        // loop around the array
+        cities.forEach(function(city) {
+            var newOption = $("<option></option>");
+            newOption.text(city);
+            newOption.val(city);
+            $('#form-checkout select[name="city"]').append(newOption);
+        });
+
+    });
+
+    // when payment method is changed
+    $('#form-checkout input[name="payment_method"]').change(function() {
+
+        // get payment radio values
+        var paymentMethod = $(this).val();
+
+        // check paymentmethod's value
+        if (paymentMethod === "on_delivery") {
+
+            // if payment Method on delivery disable credit card info
+            $("#credit-card-info input").css('display', 'none');
+        } else {
+            $("#credit-card-info input").css('display', 'block');
+        }
+
+        // toggle credit card info inputs
+        $("#credit-card-ifo").toggle();
+    })
 });
