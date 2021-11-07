@@ -684,6 +684,7 @@ input[type="email"], input[type="number"] {
 .title-section-underline {
     border-bottom: 2px solid #ebebeb;
     padding-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 /* more descrition section */
@@ -915,6 +916,43 @@ h1.title-section {
 
 /*****************************************
 *************
+    CONTACT PAGE
+******************************************
+************/
+
+#map-content {
+    padding: 0;
+}
+
+#contact-options {
+    margin-bottom: 25px;
+}
+
+#contact-options h5 {
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+#contact-options #contact-info {
+    margin-bottom: 25px;
+}
+
+#contact-info .fa-lg {
+    color: #f3af41;
+    font-size: 18px;
+    margin: 10px 10px 7px 10px;
+    width: 25px;
+    text-align: center;
+}
+
+#contact-options textarea {
+    height: 128px !important;
+    width: 99%;
+    resize: none;
+}
+
+/*****************************************
+*************
     MEDIA QUERY
 ******************************************
 ************/
@@ -1022,6 +1060,9 @@ h1.title-section {
         height: 20px !important;
         width: 20px !important;
         top: -10px !important;
+    }
+    #form-subscription {
+        margin-bottom: 30px;
     }
 }
 

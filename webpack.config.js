@@ -113,6 +113,11 @@ module.exports = {
       template: "./src/search.html",
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html",
+    }),
+
     new MiniCssExtractPlugin({
         filename: "/css/style.css",
     }),
