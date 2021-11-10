@@ -1,0 +1,104 @@
+.custom-navbar {
+    border-bottom: 3px solid #eef0ea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    .container {
+        padding: 0;
+    }
+    .navbar-header {
+        .navbar-brand {
+        margin-left: 30px;
+        margin-top: 4px;
+        }
+    }
+    a {
+        border-right: none;
+        border-left: none;
+    }
+    .custom-dropdown-menu {
+        left: auto;
+        box-shadow: 0 2px 5px 0 #ebebeb;
+        border-radius: 2px;
+        color: #777777;
+        .dropdown-item {
+            padding: 0.25rem 1rem;
+            &:hover {
+                background-color: transparent;
+            }
+            .checkbox {
+                display: inline-block;
+                label input {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .search-btn {
+        background-color: $brand-danger;
+        border-color: $brand-danger;
+        color: #fff;
+        padding: 5px 15px 7px;
+        border-radius: 0;
+        font-size: 14px;
+        font-weight: 700;
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:focus,
+        &:active:hover {
+            background-color: $brand-danger-color-dark;
+            border-color: $brand-danger-color-dark;
+        }
+    }
+    .navbar-nav {
+        li.nav-item {
+            a.nav-link {
+            color: #555555;
+            font-size: 14px;
+            padding: 15px;
+                &:hover {
+                    color: black;
+                }
+           }
+        }
+        li.nav-item.active {
+            a.nav-link {
+            color: $brand-danger;
+            border-bottom: 1px solid $brand-danger;
+            font-weight: 700;
+                &:hover {
+                    background-color: #e7e7e7;
+                }
+            }
+        }
+        li.dropdown {
+            .custom-dropdown-menu {
+                li a {
+                color: #868686;
+                text-decoration: none;
+                    &:hover {
+                        background-color: #FFE7EA;
+                    }                
+                }
+            }
+        }
+        li:last-of-type {
+            margin-top: 10px;
+        }
+    }
+    a.btn-icon {
+        padding: 5px 10px 4px;
+        color: #777777;
+        border: 1px solid #dddddd;
+        background-color: transparent;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-right: 15px;
+        font-size: 12px;
+        &:hover {
+            color: #000;
+            background-color: #bfbfbf;
+        }
+    }
+}

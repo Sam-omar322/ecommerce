@@ -1,0 +1,76 @@
+@import  "./_variables";
+@import "./custom-navbar";
+@import "./custom-table";
+@import "./mixins";
+@import "./slider";
+@import "./discount";
+
+.feature-section {
+    #carousel-feature {
+        .product-details a {
+        color: $brand-primary;
+        border-color: $brand-primary;
+        background-color: transparent;
+        padding: 9px 25px;
+        margin-top: 15px;
+        font-size: 18px;
+        border-radius: 2px;
+        }
+    }
+}
+
+.custom-btn-primary {
+    @include button-style($brand-primary);
+}
+
+.custom-btn-primary2 {
+    color: #000000;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:hover,
+        &:active:focus {
+            color: #000000;
+            background-color: $brand-primary-color-dark;
+            border-color: $brand-primary-color-dark;
+        }
+}
+
+.custom-breadcrumb {
+    a {
+        &:hover {
+    color: $brand-primary;
+        }
+    }
+}
+
+.product-option.active {
+    color: $brand-primary;
+    border-color: $brand-primary;
+}
+
+.custom-pagination {
+    li.active a {
+    background-color: $brand-primary;
+    color: #fff;
+    border-color: $brand-primary;
+    }
+}
+
+.custom-navbar {
+    .search-btn {
+    background-color: $brand-danger;
+    border-color: $brand-danger;
+    color: #fff;
+    padding: 5px 15px 7px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 700;
+    }
+}
+
+.custom-btn-danger {
+    @include button-style($brand-danger);
+}

@@ -1,0 +1,36 @@
+.custom-table {
+    tbody {
+        td {
+            &:first-child {
+                padding-right: 20px;
+            }
+        }
+    }
+    tfoot {
+        td {
+            font-size: 150%;
+            border-bottom: none;
+        }
+    }
+    th, td {
+        padding: 15px;
+        font-size: 120%;
+        vertical-align: middle;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        &:not(:first-child) {
+            text-align: center;
+        }
+    }
+    th {
+        color: #c2c2c2;
+        font-weight: 400;
+    }
+    .quantity {
+        width: 56px;
+        height: 34px!important;
+        padding: 0 8px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
